@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=PT+Sans&family=Roboto+Condensed:wght@300&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --grey1: #595d69;
+    --grey2: #353535;
+    --grey3: #435a66;
+    --grey4: #fdfdfd;
+    --grey5: #e7e9ec;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--grey4);
+}
+
+/* Header */
+.navbar {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 25px;
+    justify-content: space-between;
+    background-color: var(--grey3);
+    font-weight: 400;
+}
+
+.logo {
+    padding: 5px;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-links a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* End of Header */
+
+/* Title */
+#title {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: fit-content;
+}
+
+h1 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* End of Title */
+
+/* Badge */
+#badge {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 1;
+    padding-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space between;
+    align-items: center;
+}
+
+#badge-image {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    margin: 0;
+    margin-right: 40px;
+}
+
+#badge-info {
+    flex: 1;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    line-height: 1.7rem;
+    color: var(--grey2);
+    text-align: justify;
+    margin-left: 40px;
+}
+
+#badge a, #certificate a {
+    text-decoration: none;
+    color: var(--grey1);
+}
+/* End of Badge */
+
+/* Certificate */
+#certificate {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -42px;
+    padding: 130px 20px 130px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#certificate-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin: 0;
+    margin-left: 40px;
+}
+
+#certificate-info {
+    flex: 1;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    line-height: 1.7rem;
+    color: var(--grey2);
+    text-align: justify;
+}
+/* End of Certificate */
+
+/* Course Certificates */
+#course-certificates {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+#course-header {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    width: 100%;
+    height: fit-content;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #202020;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: var(--grey5);
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.course-container:hover {
+    background-color: white;
+    box-shadow: 0 0 30px rgba(204, 204, 204, 0.4);
+    transform: scale(1.02);
+}
+
+.course-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* End of Course Certifications */
+
+/* Footer */
+footer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: flex-end;
+    background-color: var(--grey3);
+}
+
+.footer-image {
+    width: 50px;
+    margin: 0 auto;
+    align-self: center;
+    padding: 5px 0;
+}
+/* End of Footer */
+
+/* Responsive Tags */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        height: 60px;
+        padding: 3px;
+    }
+    .logo {
+        width: 110px;
+    }
+    .navbar-links {
+        display: none;
+    }
+    #title {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    #badge {
+        flex-direction: column;
+        text-align: center;
+        width: 99%;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+    #badge-image {
+        margin: 0;
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    #badge-info {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.3rem;
+    }
+    #certificate {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 50px 0;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 99%;
+    }
+    #certificate-image {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    #certificate-info {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.3rem;
+    }
+    #course-certificates {
+        width: 99%;
+        margin-bottom: 40px;
+    }
+    #course-header {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .course-container {
+        margin-bottom: 20px;
+    }
+    .course-container p {
+        font-size: 15px;
+    }    
+    footer {
+        height: 58px;
+    }
+    .footer-image {
+        width: 45px;
+        margin: 5px 0;
+        padding: 2px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+    h1 {
+        font-size: 21px;
+    }
+}
